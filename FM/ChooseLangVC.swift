@@ -12,7 +12,8 @@ class ChooseLangVC: UIViewController {
 @IBOutlet weak var uzLangView: UIView!
 @IBOutlet weak var topLabel: UILabel!
 @IBOutlet weak var bottomLabel: UILabel!
-    
+@IBOutlet weak var topButton: UIButton!
+@IBOutlet weak var bottomButton: UIButton!
     
     
     override func viewDidLoad() {
@@ -38,5 +39,18 @@ class ChooseLangVC: UIViewController {
             topLabel.textColor = .black
         }
     }
+    @IBAction func doneBtnTapped(_ sender: UIButton) {
+        if bottomLabel.textColor == .black  && topLabel.textColor == .black {
+            showAlert()
+        }
+        print("hello")
+    }
     
+    func showAlert() {
+        let alert = UIAlertController(title: "Язык не выбран", message:"Пожалуйста выберете язык" ,preferredStyle: .alert)
+        
+        let OKaction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alert.addAction(OKaction)
+        self.present(alert, animated: true, completion: nil)
+    }
 }

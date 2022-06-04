@@ -40,5 +40,17 @@ class ChooseTypeVC: UIViewController {
         
     }
     
+    @IBAction func doneBtnTapped(_ sender: UIButton) {
+        if bottomLabel.textColor == .black &&  bottomLabel.textColor == .black {
+            showAlert()
+        }
+    }
+    func showAlert() {
+        let alert = UIAlertController(title: "Тип не выбран", message:"Пожалуйста выберите свой тип" ,preferredStyle: .alert)
+        
+        let OKaction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alert.addAction(OKaction)
+        self.present(alert, animated: true, completion: nil)
+    }
 
 }

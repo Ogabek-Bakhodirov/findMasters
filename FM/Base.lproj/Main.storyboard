@@ -45,6 +45,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
+                                            <action selector="doneBtnTapped:" destination="R5I-4K-Q1p" eventType="touchUpInside" id="uj4-cD-CTN"/>
                                             <segue destination="ipX-jx-iNV" kind="show" id="M9r-dL-e8Y"/>
                                         </connections>
                                     </button>
@@ -245,6 +246,9 @@
                                                 <integer key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="passwordBtnTapped:" destination="Zt5-VW-BID" eventType="touchUpInside" id="W6l-zo-Ggo"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Регистрация" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q20-Wb-Lta">
                                         <rect key="frame" x="145.5" y="37" width="123.5" height="60.5"/>
@@ -328,6 +332,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="quB-3X-fdH"/>
+                    <connections>
+                        <outlet property="passwordTF" destination="zfQ-jP-yc8" id="ifd-AZ-R2n"/>
+                        <outlet property="secondPasswordTF" destination="8us-en-WgV" id="FGE-05-v0D"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="reP-li-1AI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -370,6 +378,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
+                                            <action selector="doneBtnTapped:" destination="48S-Kt-Teh" eventType="touchUpInside" id="bzp-K9-eUB"/>
                                             <segue destination="R5I-4K-Q1p" kind="show" id="MMx-i3-q1o"/>
                                         </connections>
                                     </button>
@@ -456,7 +465,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain"/>
                                                         <connections>
-                                                            <action selector="chooseLangButtonTapped:" destination="48S-Kt-Teh" eventType="touchUpInside" id="ckN-RQ-Gr2"/>
+                                                            <action selector="chooseLangButtonTapped:" destination="48S-Kt-Teh" eventType="touchUpInside" id="Wa0-O1-9GO"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -517,8 +526,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="mNm-VR-LSH"/>
                     <connections>
-                        <outlet property="bottomLabel" destination="Ele-3B-dl0" id="4ud-fG-G4M"/>
+                        <outlet property="bottomButton" destination="yWt-iB-FOL" id="Uaz-B5-CcF"/>
+                        <outlet property="bottomLabel" destination="Ele-3B-dl0" id="1Uy-h0-iAD"/>
                         <outlet property="ruLangView" destination="3I2-PX-4f5" id="wn4-eO-Gy2"/>
+                        <outlet property="topButton" destination="vzq-Hi-wDN" id="o71-gb-uRY"/>
                         <outlet property="topLabel" destination="B53-wC-EC5" id="qLz-XP-Oh5"/>
                         <outlet property="uzLangView" destination="ulN-sd-HgS" id="eYD-VX-roG"/>
                     </connections>
