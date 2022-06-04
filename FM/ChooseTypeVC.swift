@@ -25,13 +25,13 @@ class ChooseTypeVC: UIViewController {
     @IBAction func chooseTypeBtnTapped(_ sender: UIButton) {
         
         if sender.tag == 0 {
-            topView.layer.borderWidth = 4
+            topView.layer.borderWidth = 2
             topView.layer.borderColor = #colorLiteral(red: 0.2588235438, green: 0.7568627596, blue: 0.9686274529, alpha: 1)
             topLabel.textColor = #colorLiteral(red: 0.2588235438, green: 0.7568627596, blue: 0.9686274529, alpha: 1)
             bottomView.layer.borderWidth = 0
             bottomLabel.textColor = .black
         } else {
-            bottomView.layer.borderWidth = 4
+            bottomView.layer.borderWidth = 2
             bottomView.layer.borderColor = #colorLiteral(red: 0.2588235438, green: 0.7568627596, blue: 0.9686274529, alpha: 1)
             bottomLabel.textColor = #colorLiteral(red: 0.2588235438, green: 0.7568627596, blue: 0.9686274529, alpha: 1)
             topView.layer.borderWidth = 0
