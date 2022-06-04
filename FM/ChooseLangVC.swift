@@ -26,13 +26,13 @@ class ChooseLangVC: UIViewController {
         
         if sender.tag == 0 {
             uzLangView.layer.borderWidth = 0
-            ruLangView.layer.borderWidth = 4
+            ruLangView.layer.borderWidth = 2
             ruLangView.layer.borderColor = #colorLiteral(red: 0.2588235438, green: 0.7568627596, blue: 0.9686274529, alpha: 1)
             topLabel.textColor = #colorLiteral(red: 0.2588235438, green: 0.7568627596, blue: 0.9686274529, alpha: 1)
             bottomLabel.textColor = .black
         }  else {
             ruLangView.layer.borderWidth = 0
-            uzLangView.layer.borderWidth = 4
+            uzLangView.layer.borderWidth = 2
             uzLangView.layer.borderColor = #colorLiteral(red: 0.2588235438, green: 0.7568627596, blue: 0.9686274529, alpha: 1)
             bottomLabel.textColor = #colorLiteral(red: 0.2588235438, green: 0.7568627596, blue: 0.9686274529, alpha: 1)
             topLabel.textColor = .black
