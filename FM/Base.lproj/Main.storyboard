@@ -72,11 +72,6 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </imageView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vpr-bH-XRz">
-                                                        <rect key="frame" x="4" y="1" width="327" height="76"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title=""/>
-                                                    </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Русский" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="caC-F8-6PZ">
                                                         <rect key="frame" x="96" y="26" width="120" height="26.5"/>
                                                         <constraints>
@@ -86,6 +81,14 @@
                                                         <color key="textColor" red="0.25098039220000001" green="0.74901960779999999" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vpr-bH-XRz">
+                                                        <rect key="frame" x="4" y="1" width="327" height="76"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title=""/>
+                                                        <connections>
+                                                            <action selector="chooseTypeBtnTapped:" destination="R5I-4K-Q1p" eventType="touchUpInside" id="VCr-vv-59e"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -123,10 +126,13 @@
                                                             <constraint firstAttribute="height" constant="70" id="wL3-Pr-beL"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e9K-nt-Scn">
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e9K-nt-Scn">
                                                         <rect key="frame" x="0.0" y="4" width="335" height="70"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain"/>
+                                                        <connections>
+                                                            <action selector="chooseTypeBtnTapped:" destination="R5I-4K-Q1p" eventType="touchUpInside" id="AwD-ho-4UU"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -185,10 +191,19 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="IYS-vG-cLg"/>
+                    <connections>
+                        <outlet property="bottomLabel" destination="vsR-7j-WdE" id="ucy-Sf-x8A"/>
+                        <outlet property="bottomView" destination="v7U-Eq-nIA" id="Udu-8v-V5L"/>
+                        <outlet property="topLabel" destination="caC-F8-6PZ" id="UgS-Hk-5L3"/>
+                        <outlet property="topView" destination="CdF-na-xCQ" id="lld-zo-qLW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hW5-20-jsr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3609" y="57"/>
+
+
+            <point key="canvasLocation" x="3687" y="57"/>
+
         </scene>
         <!--PasswordVC-->
         <scene sceneID="ED5-yy-6pL">
@@ -384,6 +399,9 @@
                                                         <rect key="frame" x="4" y="1" width="327" height="76"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain"/>
+                                                        <connections>
+                                                            <action selector="chooseLangButtonTapped:" destination="48S-Kt-Teh" eventType="touchUpInside" id="gV4-3R-Qo8"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Русский" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B53-wC-EC5">
                                                         <rect key="frame" x="96" y="26" width="120" height="26.5"/>
@@ -431,10 +449,13 @@
                                                             <constraint firstAttribute="height" constant="70" id="xrf-Zg-g2v"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yWt-iB-FOL">
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yWt-iB-FOL">
                                                         <rect key="frame" x="0.0" y="4" width="335" height="70"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain"/>
+                                                        <connections>
+                                                            <action selector="chooseLangButtonTapped:" destination="48S-Kt-Teh" eventType="touchUpInside" id="ckN-RQ-Gr2"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -493,10 +514,18 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="mNm-VR-LSH"/>
+                    <connections>
+                        <outlet property="bottomLabel" destination="Ele-3B-dl0" id="4ud-fG-G4M"/>
+                        <outlet property="ruLangView" destination="3I2-PX-4f5" id="wn4-eO-Gy2"/>
+                        <outlet property="topLabel" destination="B53-wC-EC5" id="qLz-XP-Oh5"/>
+                        <outlet property="uzLangView" destination="ulN-sd-HgS" id="eYD-VX-roG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JAT-WU-pPb" sceneMemberID="firstResponder"/>
             </objects>
+
             <point key="canvasLocation" x="2713" y="57"/>
+
         </scene>
         <!--RegistrationVC-->
         <scene sceneID="eJx-uO-KnD">
@@ -545,7 +574,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zhx-IK-DGt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1837.68115942029" y="56.919642857142854"/>
+            <point key="canvasLocation" x="1816" y="57"/>
         </scene>
     </scenes>
     <resources>
