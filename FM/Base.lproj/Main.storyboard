@@ -993,7 +993,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" systemColor="systemGray2Color"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1046" id="uTd-8l-aZa"/>
                                         </constraints>
@@ -1011,9 +1011,41 @@
                             </scrollView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NdS-co-oYu" userLabel="bottomMenu">
                                 <rect key="frame" x="0.0" y="797" width="414" height="65"/>
-                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="94" translatesAutoresizingMaskIntoConstraints="NO" id="dVT-8W-Brm">
+                                        <rect key="frame" x="78.5" y="20.5" width="257" height="24"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BHB-oe-A95">
+                                                <rect key="frame" x="0.0" y="0.0" width="23" height="24"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <backgroundConfiguration key="background" image="categoryIcon"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="10J-pO-jMj">
+                                                <rect key="frame" x="117" y="0.0" width="23" height="24"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <backgroundConfiguration key="background" image="Home-1"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OMu-hr-Lrs">
+                                                <rect key="frame" x="234" y="0.0" width="23" height="24"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <backgroundConfiguration key="background" image="Profile"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="dVT-8W-Brm" firstAttribute="width" secondItem="NdS-co-oYu" secondAttribute="width" multiplier="0.62" id="B6u-gb-AgD"/>
+                                    <constraint firstItem="dVT-8W-Brm" firstAttribute="centerY" secondItem="NdS-co-oYu" secondAttribute="centerY" id="Hxl-sG-VXn"/>
                                     <constraint firstAttribute="height" constant="65" id="OeK-b0-rb9"/>
+                                    <constraint firstItem="dVT-8W-Brm" firstAttribute="height" secondItem="NdS-co-oYu" secondAttribute="height" multiplier="0.37" id="VaP-De-MOy"/>
+                                    <constraint firstItem="dVT-8W-Brm" firstAttribute="centerX" secondItem="NdS-co-oYu" secondAttribute="centerX" id="aZN-FI-3VC"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -1055,8 +1087,11 @@
     </scenes>
     <resources>
         <image name="CustomerSVG" width="39" height="45"/>
+        <image name="Home-1" width="22" height="22"/>
+        <image name="Profile" width="16" height="20"/>
         <image name="UZB" width="48" height="48"/>
         <image name="background" width="1920" height="1080"/>
+        <image name="categoryIcon" width="24" height="24"/>
         <image name="chevron.compact.down" catalog="system" width="128" height="43"/>
         <image name="image" width="48" height="48"/>
         <image name="line.3.horizontal" catalog="system" width="128" height="64"/>
@@ -1064,8 +1099,8 @@
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemGray4Color">
-            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
