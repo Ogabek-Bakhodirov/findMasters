@@ -915,27 +915,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zr7-C0-vlg">
-                                <rect key="frame" x="0.0" y="88" width="414" height="198"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                            </containerView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="line.3.horizontal" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="4Ca-5Q-tKk">
-                                <rect key="frame" x="20" y="116" width="16" height="19"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NQS-rP-NRF">
-                                <rect key="frame" x="357" y="105" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
-                                        <integer key="value" value="25"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </imageView>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q1w-Li-7Yf">
+                                <rect key="frame" x="0.0" y="88" width="414" height="194"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fqr-iC-Eza">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="194"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Fqr-iC-Eza" secondAttribute="bottom" id="8Iz-Lk-Zxa"/>
+                                    <constraint firstItem="Fqr-iC-Eza" firstAttribute="top" secondItem="Q1w-Li-7Yf" secondAttribute="top" id="TBP-UQ-ATz"/>
+                                    <constraint firstItem="Fqr-iC-Eza" firstAttribute="leading" secondItem="Q1w-Li-7Yf" secondAttribute="leading" id="U35-OT-pnR"/>
+                                    <constraint firstAttribute="trailing" secondItem="Fqr-iC-Eza" secondAttribute="trailing" id="eYX-cG-XD1"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="CxM-yQ-ErN"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Q1w-Li-7Yf" firstAttribute="leading" secondItem="CxM-yQ-ErN" secondAttribute="leading" id="Lwc-h0-Uz4"/>
+                            <constraint firstItem="Q1w-Li-7Yf" firstAttribute="trailing" secondItem="CxM-yQ-ErN" secondAttribute="trailing" id="e16-Pj-amM"/>
+                            <constraint firstItem="Q1w-Li-7Yf" firstAttribute="top" secondItem="CxM-yQ-ErN" secondAttribute="top" id="hiI-rA-bfh"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="yHf-YA-X3P"/>
                 </viewController>
@@ -980,10 +982,12 @@
         <image name="background" width="1920" height="1080"/>
         <image name="chevron.compact.down" catalog="system" width="128" height="43"/>
         <image name="image" width="48" height="48"/>
-        <image name="line.3.horizontal" catalog="system" width="128" height="64"/>
         <image name="masterSVG" width="38" height="44"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
