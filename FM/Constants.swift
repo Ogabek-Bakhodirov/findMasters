@@ -16,7 +16,7 @@ struct Key{
     }
     
     struct Region{
-        static let regions = ["Andijan", "Bukhara", "Fergana", "Jizzakh", "Xorazm", "Namangan", "Navoiy", "Qashqadaryo", "Samarqand", "Sirdaryo", "Surxondaryo", "Karakalpakistan", "Tashketn"]
+        static let regions = ["Андижан", "Бухара", "Фергана", "Джизак", "Хорезм", "Наманган", "Навои", "Кашкадарья", "Самарканд", "Сырдарья", "Сурхандарьинская", "Каракалпакстан", "Ташкент"]
     }
     
     struct Gender{
