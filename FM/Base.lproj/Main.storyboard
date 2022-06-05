@@ -248,6 +248,7 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="passwordBtnTapped:" destination="Zt5-VW-BID" eventType="touchUpInside" id="W6l-zo-Ggo"/>
+                                            <segue destination="vNT-D7-872" kind="show" id="plk-YG-Arw"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Регистрация" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q20-Wb-Lta">
@@ -272,7 +273,7 @@
                                                         <rect key="frame" x="0.0" y="23" width="335" height="55"/>
                                                         <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" textContentType="password"/>
                                                     </textField>
                                                 </subviews>
                                             </stackView>
@@ -289,7 +290,7 @@
                                                         <rect key="frame" x="0.0" y="23" width="335" height="55"/>
                                                         <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" textContentType="password"/>
                                                     </textField>
                                                 </subviews>
                                             </stackView>
@@ -340,6 +341,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="reP-li-1AI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5100" y="57"/>
+        </scene>
+        <!--CategoryVC-->
+        <scene sceneID="uBs-gH-8me">
+            <objects>
+                <viewController id="IPn-6w-4Qx" customClass="CategoryVC" customModule="FM" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ySt-vV-MHB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="9W4-et-73s"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PM0-dI-Icq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6862" y="57"/>
         </scene>
         <!--Choose LangVC-->
         <scene sceneID="2uY-u2-c40">
@@ -997,6 +1013,83 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zhx-IK-DGt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1816" y="57"/>
+        </scene>
+        <!--HomeVC-->
+        <scene sceneID="3AS-vi-v9J">
+            <objects>
+                <viewController id="vNT-D7-872" customClass="HomeVC" customModule="FM" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CA9-Cw-fMl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zr7-C0-vlg">
+                                <rect key="frame" x="0.0" y="88" width="414" height="198"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="tn8-U5-20D" kind="embed" id="sIO-em-tnV"/>
+                                </connections>
+                            </containerView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Ca-5Q-tKk">
+                                <rect key="frame" x="20" y="116" width="16" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NQS-rP-NRF">
+                                <rect key="frame" x="357" y="105" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CxM-yQ-ErN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="yHf-YA-X3P"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J3b-nc-fCw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5971.0144927536239" y="56.919642857142854"/>
+        </scene>
+        <!--All CategoryVC-->
+        <scene sceneID="jWD-hg-JLH">
+            <objects>
+                <viewController id="KUq-SB-4lk" customClass="AllCategoryVC" customModule="FM" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FPm-KL-Gc1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="MPL-hq-n9H"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QR0-Pd-PGA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7733" y="57"/>
+        </scene>
+        <!--Profile Vc-->
+        <scene sceneID="Ns5-e3-s8h">
+            <objects>
+                <viewController id="za2-4Y-jMy" customClass="ProfileVc" customModule="FM" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kcw-JF-kfX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Hj0-zY-YG2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="npa-vd-AAC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8683" y="57"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="mNh-3G-cl5">
+            <objects>
+                <viewController id="tn8-U5-20D" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="l72-gW-2OI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="198"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lGp-sI-5Qp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5800" y="-359"/>
         </scene>
     </scenes>
     <resources>

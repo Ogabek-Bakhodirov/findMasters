@@ -41,7 +41,7 @@ class ChooseTypeVC: UIViewController {
     }
     
     @IBAction func doneBtnTapped(_ sender: UIButton) {
-        if bottomLabel.textColor == .black &&  bottomLabel.textColor == .black {
+        if topLabel.textColor == .black &&  bottomLabel.textColor == .black {
             showAlert()
         }
     }

@@ -18,6 +18,10 @@
 		CEEAFAF9284B616E009222DC /* RegistrationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEAFAF8284B616E009222DC /* RegistrationVC.swift */; };
 		CEEAFAFB284B617C009222DC /* PasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEAFAFA284B617C009222DC /* PasswordVC.swift */; };
 		CEEAFAFD284B635E009222DC /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = CEEAFAFC284B635E009222DC /* .gitignore */; };
+		CEEAFB01284C7ABF009222DC /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEAFB00284C7ABF009222DC /* HomeVC.swift */; };
+		CEEAFB03284C7AD4009222DC /* CategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEAFB02284C7AD4009222DC /* CategoryVC.swift */; };
+		CEEAFB05284C7B47009222DC /* AllCategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEAFB04284C7B47009222DC /* AllCategoryVC.swift */; };
+		CEEAFB07284C7BBE009222DC /* ProfileVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEAFB06284C7BBE009222DC /* ProfileVc.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,10 @@
 		CEEAFAF8284B616E009222DC /* RegistrationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationVC.swift; sourceTree = "<group>"; };
 		CEEAFAFA284B617C009222DC /* PasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordVC.swift; sourceTree = "<group>"; };
 		CEEAFAFC284B635E009222DC /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		CEEAFB00284C7ABF009222DC /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		CEEAFB02284C7AD4009222DC /* CategoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryVC.swift; sourceTree = "<group>"; };
+		CEEAFB04284C7B47009222DC /* AllCategoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCategoryVC.swift; sourceTree = "<group>"; };
+		CEEAFB06284C7BBE009222DC /* ProfileVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVc.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +77,10 @@
 				CEEAFAE0284B4BDF009222DC /* AppDelegate.swift */,
 				CEEAFAE2284B4BDF009222DC /* SceneDelegate.swift */,
 				CEEAFAE6284B4BDF009222DC /* Main.storyboard */,
+				CEEAFB00284C7ABF009222DC /* HomeVC.swift */,
+				CEEAFB02284C7AD4009222DC /* CategoryVC.swift */,
+				CEEAFB04284C7B47009222DC /* AllCategoryVC.swift */,
+				CEEAFB06284C7BBE009222DC /* ProfileVc.swift */,
 				CEEAFAF4284B6147009222DC /* ChooseLangVC.swift */,
 				CEEAFAF6284B615A009222DC /* ChooseTypeVC.swift */,
 				CEEAFAF8284B616E009222DC /* RegistrationVC.swift */,
@@ -155,12 +167,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEEAFAF9284B616E009222DC /* RegistrationVC.swift in Sources */,
+				CEEAFB01284C7ABF009222DC /* HomeVC.swift in Sources */,
 				CEEAFAF7284B615A009222DC /* ChooseTypeVC.swift in Sources */,
+				CEEAFB03284C7AD4009222DC /* CategoryVC.swift in Sources */,
 				CEEAFAE1284B4BDF009222DC /* AppDelegate.swift in Sources */,
 				CEEAFAFB284B617C009222DC /* PasswordVC.swift in Sources */,
+				CEEAFB07284C7BBE009222DC /* ProfileVc.swift in Sources */,
 				80A4FEAB284BEEEE001E3809 /* Constants.swift in Sources */,
 				CEEAFAE3284B4BDF009222DC /* SceneDelegate.swift in Sources */,
 				CEEAFAF5284B6147009222DC /* ChooseLangVC.swift in Sources */,
+				CEEAFB05284C7B47009222DC /* AllCategoryVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
