@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		80A4FEAB284BEEEE001E3809 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A4FEAA284BEEEE001E3809 /* Constants.swift */; };
 		CEEAFAE1284B4BDF009222DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEAFAE0284B4BDF009222DC /* AppDelegate.swift */; };
 		CEEAFAE3284B4BDF009222DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEAFAE2284B4BDF009222DC /* SceneDelegate.swift */; };
 		CEEAFAE8284B4BDF009222DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEEAFAE6284B4BDF009222DC /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		80A4FEAA284BEEEE001E3809 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CEEAFADD284B4BDF009222DC /* FM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEEAFAE0284B4BDF009222DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEEAFAE2284B4BDF009222DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				CEEAFAEB284B4BE0009222DC /* LaunchScreen.storyboard */,
 				CEEAFAEE284B4BE0009222DC /* Info.plist */,
 				CEEAFAFC284B635E009222DC /* .gitignore */,
+				80A4FEAA284BEEEE001E3809 /* Constants.swift */,
 			);
 			path = FM;
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 				CEEAFAF7284B615A009222DC /* ChooseTypeVC.swift in Sources */,
 				CEEAFAE1284B4BDF009222DC /* AppDelegate.swift in Sources */,
 				CEEAFAFB284B617C009222DC /* PasswordVC.swift in Sources */,
+				80A4FEAB284BEEEE001E3809 /* Constants.swift in Sources */,
 				CEEAFAE3284B4BDF009222DC /* SceneDelegate.swift in Sources */,
 				CEEAFAF5284B6147009222DC /* ChooseLangVC.swift in Sources */,
 			);
