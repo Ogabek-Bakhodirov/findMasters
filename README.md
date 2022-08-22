@@ -13,6 +13,6 @@ There you can choose types of masters
 
 <img width="365" alt="Screen Shot 2022-08-23 at 02 37 01" src="https://user-images.githubusercontent.com/93769522/186023824-b42849fa-2248-491a-b4b2-ab2db02a7e84.png">
 
-There is list of masters
+There is list of masters and their info
 
 <img width="367" alt="Screen Shot 2022-08-23 at 02 37 28" src="https://user-images.githubusercontent.com/93769522/186023863-3933d4e1-ffa8-4c69-a1c1-fcc78f392717.png">
